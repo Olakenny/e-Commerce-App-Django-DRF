@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}
+K-Store
+{% endblock %}
+
+{% block content %}
+<div class="text-center">
+    <br>
+    <br>
+    <h1 class="text-center product_title">
+        Thanks for placing your order
+    </h1>
+    <br>
+    <br>
+    <p>Your order number is <b>{{customer_order.id}}</b></p>
+    <br>
+    <p>
+        We have recieved your order, and we shall proceed with the process immediately. Email confirmation 
+        which contain order items information has been sent to you.
+    </p>
+
+</div>
+
+{% endblock %}
